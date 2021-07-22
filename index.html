@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="heading-text">
+        <h1>Today's <span>Weather <br> For Cities</span></h1>
+      </div>
+
+      <form action="#">
+        <label for="search-input">Type Your City Name Below!</label>
+        <div class="search-bar">
+          <input type="text" placeholder="e.g. Toronto" id="search-input">
+          <button type="submit" value="Search" id="search-button">
+            <p>Search</p>
+          </button>
+        </div>
+      </form>
+    </header>
+
+
+    <div class="modal-results">
+      <div class="modal-header">
+        <div class="modal-title">
+          <p class="modal-city-name"> Replace with City Name</p>
+        </div>
+        <button class="modal-close-button">&times;</button>
+      </div>
+    
+      <div class="modal-body">
+        <button id="pop-up-close-button">Click Here to Close</button>
+        <p class="escape-to-close">Or Press Escape</p>
+      </div>
+    </div>
+    <div class="modal-overlay">
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="./javascript/script.js"></script>
+</body>
+</html>
